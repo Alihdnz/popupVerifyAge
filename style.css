@@ -1,0 +1,128 @@
+#popupAgeContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+#errorAgeShow {
+    
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(52, 52, 52, 0.9);
+    top: -10px;
+    padding: 20px;
+    transition: 0.3s ease all;
+    box-sizing: border-box;
+    border-radius: 26px 26px 0 0;
+    
+    
+}
+
+.disabled {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.errorAgeShow div {
+    color: #F4F4F4;
+}
+
+.popupContent {
+    width: 475px;
+    height: 441px;
+    margin: 10px;
+    background: #F4F4F4;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagePopup {
+    width: 111px;
+    height: 111px;
+   
+    background: #D9D9D9;
+}
+
+.titlePopup {
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #252525;
+}
+
+.subTitlePopup {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #252525
+}
+
+.buttonsContainer button {
+    width: 200px;
+    height: 78px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s ease top;
+    position: relative;
+    cursor: pointer;
+}
+
+.buttonsContainer button:hover {
+    top: -2px;
+}
+
+#allowAge {
+    background: #000000;
+    color: #F4F4F4;
+}
+#disallowAge {
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.smallText {
+    color: #616161;
+    margin-top: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.hideme {
+    display: none!important;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+@media screen and (max-width:430px) {
+    .popupContent{
+        width: 350px;
+    }
+
+    .buttonsContainer button {
+        width: 150px;
+    }
+
+    .smallText {
+        width: 300px;
+    }
+}

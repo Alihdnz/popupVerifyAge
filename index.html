@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- popup container -->
+    <div id="popupAgeContainer" class='hideme'>
+         <!-- popup content -->
+        <div class="popupContent">
+            <div id="errorAgeShow" class="disabled">
+                <div>Você não tem idade para continuar.
+                </div>
+            </div>
+        <!-- img of store -->
+            <div class="imagePopup"></div>
+        
+         <!-- text -->
+            <span class="titlePopup" style="
+            
+            ">
+                Bem vindo
+            </span>
+            <p class="subTitlePopup">
+                Por favor informe sua idade
+            </p>
+
+            <div class="buttonsContainer">
+                <button type="button" id="allowAge">
+                    Tenho mais de 18 anos
+                </button>
+
+                <button type="button" id="disallowAge">
+                    Tenho menos de 18 anos
+                </button>
+            </div>
+
+            <small class="smallText">Entrando em nosso site, você concorda com as políticas de privacidade e termo de uso.</small>
+        </div>
+        
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
